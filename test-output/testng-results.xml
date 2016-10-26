@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My first testng test" duration-ms="36887" started-at="2016-10-26T19:23:36Z" finished-at="2016-10-26T19:24:13Z">
+    <groups>
+    </groups>
+    <test name="MY test name is test1" duration-ms="36887" started-at="2016-10-26T19:23:36Z" finished-at="2016-10-26T19:24:13Z">
+      <class name="com.pb.selenium.spider.testngTest1">
+        <test-method status="PASS" signature="f()[pri:0, instance:com.pb.selenium.spider.testngTest1@665373c8]" name="f" duration-ms="36777" started-at="2016-10-27T00:53:36Z" finished-at="2016-10-27T00:54:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+      </class> <!-- com.pb.selenium.spider.testngTest1 -->
+    </test> <!-- MY test name is test1 -->
+  </suite> <!-- My first testng test -->
+</testng-results>
