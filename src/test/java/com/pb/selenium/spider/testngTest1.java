@@ -1,5 +1,7 @@
 package com.pb.selenium.spider;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +13,8 @@ import org.testng.annotations.Test;
 public class testngTest1 {
   @Test
   public void f() {
+	    File firefoxPathBinary = new File("/usr/bin/firefox");
+	    System.setProperty("webdriver.firefox.bin", firefoxPathBinary.getAbsolutePath());
 	    WebDriver driver = new FirefoxDriver();
 
         // And now use this to visit Google
