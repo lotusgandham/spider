@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.pb.selenium.spider.libraries.SearchPage;
@@ -19,9 +20,10 @@ public class seleniumTest1 {
         // not the implementation.
 		//
         WebDriver driver = new FirefoxDriver();
+//        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
         // And now use this to visit Google
-        driver.get("http://www.google.com");
+        driver.get("https://tfl.gov.uk/");
         // Alternatively the same thing can be done like this
         // driver.navigate().to("http://www.google.com");
 
@@ -45,13 +47,21 @@ public class seleniumTest1 {
 //            }
 //        });
         
-        SearchPage pg = new SearchPage(driver);
-        SearchResultsPage pg1 = pg.searchText("spiderman");
+//        SearchPage pg = new SearchPage(driver);
+//        SearchResultsPage pg1 = pg.searchText("spiderman");
 
         // Should see: "cheese! - Google Search"
         System.out.println("Page title is: " + driver.getTitle());
         
+//        WebElement w = driver.findElement(By.xpath("(//a[@href='#jp-new'])[1]"));
+        WebElement w = (new WebDriverWait(driver, 20))
+                .until(ExpectedConditions.presenceOfElementLocated(By.xpath("(//a[@href='#jp-new'])[1]")));
+        
+        w.click();
+        
+        
+        
         //Close the browser
-        driver.quit();
+       // driver.quit();
 	}
 }

@@ -13,8 +13,8 @@ import org.testng.annotations.Test;
 public class testngTest1 {
   @Test
   public void f() {
-	    File firefoxPathBinary = new File("/usr/bin/firefox");
-	    System.setProperty("webdriver.firefox.bin", firefoxPathBinary.getAbsolutePath());
+//	    File firefoxPathBinary = new File("/usr/bin/firefox");
+//	    System.setProperty("webdriver.firefox.bin", firefoxPathBinary.getAbsolutePath());
 	    WebDriver driver = new FirefoxDriver();
 
         // And now use this to visit Google
