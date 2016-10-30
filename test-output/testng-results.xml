@@ -1,17 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="38095" started-at="2016-10-29T15:10:20Z" finished-at="2016-10-29T15:10:59Z">
+  <suite name="Default suite" duration-ms="17646" started-at="2016-10-30T19:17:11Z" finished-at="2016-10-30T19:17:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="38095" started-at="2016-10-29T15:10:20Z" finished-at="2016-10-29T15:10:59Z">
-      <class name="com.pb.selenium.spider.testngTest1">
-        <test-method status="PASS" signature="f()[pri:0, instance:com.pb.selenium.spider.testngTest1@2eeccf6e]" name="f" duration-ms="37992" started-at="2016-10-29T20:40:21Z" finished-at="2016-10-29T20:40:59Z">
+    <test name="Default test" duration-ms="17646" started-at="2016-10-30T19:17:11Z" finished-at="2016-10-30T19:17:29Z">
+      <class name="com.pb.selenium.spider.TflCalculateRoute">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.pb.selenium.spider.TflCalculateRoute@3ff33ecb]" name="beforeTest" is-config="true" duration-ms="17431" started-at="2016-10-31T00:47:11Z" finished-at="2016-10-31T00:47:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-      </class> <!-- com.pb.selenium.spider.testngTest1 -->
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="calculateRouteFromAToB(java.lang.String, java.lang.String)[pri:0, instance:com.pb.selenium.spider.TflCalculateRoute@3ff33ecb]" name="calculateRouteFromAToB" duration-ms="39" started-at="2016-10-31T00:47:28Z" data-provider="routeData" finished-at="2016-10-31T00:47:28Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[fromSource]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[toDest]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateRouteFromAToB -->
+        <test-method status="PASS" signature="calculateRouteFromAToB(java.lang.String, java.lang.String)[pri:0, instance:com.pb.selenium.spider.TflCalculateRoute@3ff33ecb]" name="calculateRouteFromAToB" duration-ms="51" started-at="2016-10-31T00:47:28Z" data-provider="routeData" finished-at="2016-10-31T00:47:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Hounslow]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Watford]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateRouteFromAToB -->
+        <test-method status="PASS" signature="calculateRouteFromAToB(java.lang.String, java.lang.String)[pri:0, instance:com.pb.selenium.spider.TflCalculateRoute@3ff33ecb]" name="calculateRouteFromAToB" duration-ms="4" started-at="2016-10-31T00:47:29Z" data-provider="routeData" finished-at="2016-10-31T00:47:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Aldgate]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hounslow]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateRouteFromAToB -->
+        <test-method status="PASS" signature="calculateRouteFromAToB(java.lang.String, java.lang.String)[pri:0, instance:com.pb.selenium.spider.TflCalculateRoute@3ff33ecb]" name="calculateRouteFromAToB" duration-ms="4" started-at="2016-10-31T00:47:29Z" data-provider="routeData" finished-at="2016-10-31T00:47:29Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Nagpur]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Hyderbad]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calculateRouteFromAToB -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pb.selenium.spider.TflCalculateRoute@3ff33ecb]" name="afterTest" is-config="true" duration-ms="1" started-at="2016-10-31T00:47:29Z" finished-at="2016-10-31T00:47:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- com.pb.selenium.spider.TflCalculateRoute -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
